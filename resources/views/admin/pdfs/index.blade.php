@@ -13,7 +13,7 @@
                         <a href="{{ url('admin/pdfs/create') }}" class="btn btn-primary">
                             Registrar documentos
                         </a>
-                        <a href="{{ url('custom-page') }}" class="btn btn-danger">Volver</a>
+                        <a href="{{ url('/') }}" class="btn btn-danger">Volver</a>
                     </div>
                 </div>
                 <div class="card-body">

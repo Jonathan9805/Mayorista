@@ -51,22 +51,15 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Mayorista</h1>
+          <h1 class="sitename"></h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Inicio<br></a></li>
-            <li><a href="#about">Mejoras</a></li>
-            <li><a href="#services">Servicioss</a></li>
-            <li><a href="#departments">Locales</a></li>
-            <li><a href="#gallery">Galeria</a></li>
-            <li><a href="#contact">Mapa</a></li>
-          </ul>
+
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn d-none d-sm-block" href="{{ url('login') }}">Iniciar sesion</a>
+        
 
       </div>
 
@@ -285,20 +278,22 @@
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">MORAS</a>
+                
+                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1"> ADQ.MORAS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">PLANTAS ORNAMENTALES</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">ADQ.FRUTILLAS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">GRANOS SECOS</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">ADQ.AJOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">LEGUMBRES</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">ADOQUINES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">CARNICOS</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">LOCALES DISPONIBLES</a>
               </li>
+             
             </ul>
           </div>
           <div class="col-lg-9 mt-4 mt-lg-0">
@@ -309,6 +304,8 @@
                     <h3>MORAS</h3>
                     <p class="fst-italic">Descubre en nuestro sector de frutas la frescura y calidad de productos seleccionados directamente de la cosecha, para que disfrutes de lo mejor de la naturaleza en cada fruta.</p>
                     <p>En el sector de frutas, te ofrecemos una variedad de productos frescos y de temporada, seleccionados cuidadosamente para garantizar el mejor sabor y calidad en cada bocado.</p>
+                    <a href="{{ url('/admin/locales') }}" class="btn btn-warning">Locales disponibles</a>
+
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
@@ -320,6 +317,7 @@
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Decora tu espacio con nuestras plantas ornamentales, frescas y llenas de vida.</h3>
                     <p class="fst-italic">En nuestro sector de plantas ornamentales, encontrarás una amplia variedad de especies cuidadas con dedicación, perfectas para darle vida y color a tu hogar o negocio con un toque natural y elegante.</p>
+                    <a href="{{ url('/admin/frutillas') }}" class="btn btn-warning">Locales disponibles</a>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
@@ -331,6 +329,7 @@
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Granos secos de calidad, listos para tu cocina.</h3>
                     <p class="fst-italic">En nuestro mercado encontrarás una amplia variedad de granos secos de excelente calidad, ideales para complementar tus recetas diarias. Cada grano es seleccionado cuidadosamente para garantizar frescura, sabor y valor nutricional, brindándote productos que enriquecen tu cocina con lo mejor de la naturaleza.</p>
+                    <a href="{{ url('/admin/ajos') }}" class="btn btn-warning">Locales disponibles</a>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
@@ -343,6 +342,8 @@
                     <h3>Legumbres frescas y nutritivas, directas del campo a tu mesa.</h3>
                     <p class="fst-italic">En nuestro mercado, te ofrecemos legumbres frescas y de calidad, cultivadas con esmero para asegurar su sabor y valor nutricional.</p>
                     <p>Son perfectas para preparar platillos saludables y deliciosos para ti y tu familia.</p>
+                    <a href="{{ url('/admin/adoquines') }}" class="btn btn-warning">Locales disponibles</a>
+
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
@@ -352,12 +353,14 @@
               <div class="tab-pane" id="departments-tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Carnes frescas y de calidad, ideales para tus mejores platillos.</h3>
-                    <p class="fst-italic">En nuestro sector cárnico, ofrecemos una amplia variedad de carnes frescas y de la más alta calidad, seleccionadas cuidadosamente para garantizar su sabor y ternura.</p>
-                    <p>Trabajamos con proveedores confiables para brindarte productos que cumplen con los más altos estándares de higiene y frescura, ideales para preparar tus recetas favoritas.</p>
+                    <h3>Nuestros locales disponibles</h3>
+                    <p class="fst-italic">Conoce todos nuestros locales disponibles</p>
+                    <p>Postula y se parte de nosotros con nuestros locales disponibles en todas nuestras secciones, forma parte de la familia Latacunga</p>
+                    <a href="{{ url('/puestos-page') }}" class="btn btn-success">Ver todos</a>
+
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
